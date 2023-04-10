@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+button,
+::placeholder {
+  font-family: "Press Start 2P", cursive;
+}
+
+.mainMainContainer {
+  width: 500px;
+  margin: 50px auto;
+}
+
+.mainContainer {
+  display: inline-block;
+  /* width: 400px; */
+  padding: 30px 50px;
+  border-radius: 50px;
+  margin: 10px auto;
+  background-color: orangered;
+  /* border: 1px solid #818181; */
+}
+
+span {
+  font-size: 26px;
+}
+
+button {
+  /* height: 46px; */
+  margin-left: 16px;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 24px;
+  border: none;
+  color: orangered;
+}
+
+#play {
+  margin-left: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.timerBlock {
+  margin: 10px auto 20px 10px;
+}
+
+.digitalNum {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.setupPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.endingPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.setupPage input {
+  /* height: 50px; */
+  width: 20%;
+  padding: 20px 20px;
+}
+
+.setupPage button, .endingPage button {
+  margin: 0;
+  border-radius: 0;
+  width: 20%;
+  font-size: 18px;
+}
+
+.setupPage.show {
+  display: flex;
+}
+
+.endingPage.show {
+  display: flex;
+}

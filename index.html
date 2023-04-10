@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="mainMainContainer">
+      <div class="mainContainer">
+        <div class="timerBlock">
+          <span class="digitalNum" id="minute">00</span>
+          <span class="digitalNum">:</span>
+          <span class="digitalNum" id="second">00</span>
+        </div>
+        <!-- <br /> -->
+        <button
+          id="play"
+          onclick="timer.startTimer()"
+          title="Click to start counting"
+        >
+          <span class="material-symbols-outlined"> play_arrow </span>
+        </button>
+        <button id="pause" onclick="timer.pauseTime()" title="Click to pause">
+          <span class="material-symbols-outlined"> pause </span>
+        </button>
+        <button
+          id="setTimer"
+          onclick="timer.showSetupScreen()"
+          title="Click to set count down timer"
+        >
+          <span class="material-symbols-outlined"> tune </span>
+        </button>
+      </div>
+    </article>
+    <div class="setupPage" id="setupPage">
+      <input
+        type="number"
+        step="1"
+        max="60"
+        id="getMin"
+        placeholder="Type in Minute"
+      />
+      <!-- <label for="getMin">Type in Min</label> -->
+      <input
+        type="number"
+        step="1"
+        max="60"
+        id="getSec"
+        placeholder="Type in Second"
+      />
+      <!-- <label for="getSec">Type in Sec</label> -->
+      <button id="setTimerBtn" onclick="timer.setTimer()">Confirm!</button>
+      <button onclick="timer.cancelScreen()">Back</button>
+    </div>
+    <div class="endingPage" id="endingPage">
+      <button onclick="location.reload()">Back</button>
+    </div>
+    <script src="js/Timer.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
